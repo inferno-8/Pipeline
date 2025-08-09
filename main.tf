@@ -6,7 +6,7 @@ terraform {
     }
   }
 
-
+git sttaus
   backend "azurerm" {
       resource_group_name   = "RRJ-ResourceGroup"        
       storage_account_name  = "rrj8stg"
@@ -26,4 +26,9 @@ provider "azurerm" {
 resource "azurerm_resource_group" "rj" {
   name     = "RRJ-ResourceGroup"
   location = "East US"
+}
+
+resource "azurerm_resource_group" "rj" {
+  name     = "RRJ1-ResourceGroup"
+  location = "centralus"
 }
